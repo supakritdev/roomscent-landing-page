@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>จัดการคำสั่งซื้อ — Room Scent Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Minimalist Admin Table Styling */
+    .table-wrapper {
+      background-color: var(--bg-elevated);
+      border: 1px solid var(--border-light);
+      overflow-x: auto;
+    }
+
+    #ordersTable {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    #ordersTable thead {
+      background-color: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    #ordersTable th {
+      padding: 1.15rem 1.25rem;
+      font-weight: 500;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    #ordersTable td {
+      padding: 1.15rem 1.25rem;
+      border-bottom: 1px solid var(--border-light);
+      color: var(--text-primary);
+      vertical-align: top;
+    }
+
+    #ordersTable tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    #ordersTable tbody tr:hover {
+      background-color: var(--bg-primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">Room Scent</a>
+      <nav aria-label="Admin Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">หน้าร้าน</a></li>
+          <li><a href="product.html">คอลเลกชัน</a></li>
+          <li><a href="admin.html" class="active">รายการสั่งซื้อ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="section-header" style="margin-bottom: 3rem;">
+          <span class="eyebrow">Store Management</span>
+          <h1>รายการสั่งซื้อทั้งหมด</h1>
+          <p>
+            ข้อมูลคำสั่งซื้อจากลูกค้า เรียงลำดับจากรายการล่าสุดขึ้นก่อน
+          </p>
+        </div>
+
+        <!-- Orders Table (Populated by script.js) -->
+        <div class="table-wrapper">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th>วันเวลา</th>
+                <th>ชื่อลูกค้า</th>
+                <th>เบอร์โทร/Line</th>
+                <th>รายการสินค้า</th>
+                <th>จำนวนเงินรวม</th>
+                <th>หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top: 0; border-top: none;">
+        <span>&copy; 2026 Room Scent Admin. All rights reserved.</span>
+        <span>Crafted for mindful living spaces.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

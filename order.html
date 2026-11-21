@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า — Room Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">Room Scent</a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">คอลเลกชัน</a></li>
+          <li><a href="order.html" class="active">สั่งซื้อสินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container" style="max-width: 640px;">
+        <!-- Page Header -->
+        <div class="section-header" style="margin-bottom: 3rem;">
+          <span class="eyebrow">Place Your Order</span>
+          <h1>รายละเอียดการสั่งซื้อ</h1>
+          <p>
+            กรุณากรอกข้อมูลสำหรับการติดต่อและจัดส่ง ทีมงานจะติดต่อกลับเพื่อยืนยันออเดอร์โดยเร็วที่สุด
+          </p>
+        </div>
+
+        <!-- Order Form Card -->
+        <div style="background-color: var(--bg-elevated); border: 1px solid var(--border-light); padding: 2.75rem 2.25rem;">
+          <form id="orderForm">
+            <div class="form-group">
+              <label for="customerName" class="form-label">ชื่อลูกค้า *</label>
+              <input
+                type="text"
+                id="customerName"
+                name="customerName"
+                class="form-control"
+                placeholder="ระบุชื่อ-นามสกุล หรือชื่อเล่น"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contact" class="form-label">เบอร์โทร / Line ID *</label>
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                class="form-control"
+                placeholder="เช่น 081-234-5678 หรือ @lineid"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="items" class="form-label">รายการสินค้า *</label>
+              <input
+                type="text"
+                id="items"
+                name="items"
+                class="form-control"
+                placeholder="ระบุชื่อสินค้าและจำนวนที่ต้องการ"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="total" class="form-label">จำนวนเงินรวม (บาท) *</label>
+              <input
+                type="number"
+                id="total"
+                name="total"
+                class="form-control"
+                placeholder="0"
+                min="0"
+                step="any"
+                required
+              >
+            </div>
+
+            <div class="form-group" style="margin-bottom: 2.25rem;">
+              <label for="note" class="form-label">หมายเหตุ / ที่อยู่จัดส่ง</label>
+              <textarea
+                id="note"
+                name="note"
+                class="form-control"
+                rows="3"
+                placeholder="ระบุที่อยู่จัดส่ง หรือข้อความเพิ่มเติมถึงร้าน (ถ้ามี)"
+              ></textarea>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <button type="submit" class="btn" style="width: 100%;">ยืนยันสั่งซื้อ</button>
+              <a href="product.html" style="text-align: center; font-size: 0.82rem; color: var(--text-muted); letter-spacing: 0.06em;">
+                &larr; กลับไปเลือกชมสินค้าเพิ่มเติม
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">Room Scent</a>
+          <p>
+            เครื่องหอมปรับบรรยากาศสำหรับพื้นที่ส่วนตัว รังสรรค์กลิ่นอย่างพิถีพิถันเพื่อความสงบและสมดุลในทุกวัน
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">เมนูหลัก</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="product.html">สินค้าทั้งหมด</a></li>
+            <li><a href="order.html">สั่งซื้อสินค้า</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">โหมดกลิ่นหอม</h4>
+          <ul class="footer-links">
+            <li><a href="product.html?mood=fresh">Fresh Collection</a></li>
+            <li><a href="product.html?mood=relax">Relax Collection</a></li>
+            <li><a href="product.html?mood=focus">Focus Collection</a></li>
+            <li><a href="product.html?mood=romance">Romance Collection</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Room Scent. All rights reserved.</span>
+        <span>Crafted for mindful living spaces.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>คอลเลกชันสินค้า — Room Scent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">Room Scent</a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html" class="active">คอลเลกชัน</a></li>
+          <li><a href="order.html">สั่งซื้อสินค้า</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <!-- Page Header -->
+        <div class="section-header">
+          <span class="eyebrow">The Collection</span>
+          <h1>คอลเลกชันเครื่องหอมปรับบรรยากาศ</h1>
+          <p>
+            เลือกชมสเปรย์ปรับอากาศและเทียนหอมไขถั่วเหลืองธรรมชาติ แยกตามอารมณ์และบรรยากาศที่คุณต้องการ
+          </p>
+        </div>
+
+        <!-- Filter Buttons Container (Populated by script.js) -->
+        <div id="filter-bar" class="filter-group" role="group" aria-label="กรองสินค้าตามโหมด"></div>
+
+        <!-- Product Cards Container (Populated by script.js) -->
+        <div id="product-list" class="product-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">Room Scent</a>
+          <p>
+            เครื่องหอมปรับบรรยากาศสำหรับพื้นที่ส่วนตัว รังสรรค์กลิ่นอย่างพิถีพิถันเพื่อความสงบและสมดุลในทุกวัน
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">เมนูหลัก</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="product.html">สินค้าทั้งหมด</a></li>
+            <li><a href="order.html">สั่งซื้อสินค้า</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">โหมดกลิ่นหอม</h4>
+          <ul class="footer-links">
+            <li><a href="product.html?mood=fresh">Fresh Collection</a></li>
+            <li><a href="product.html?mood=relax">Relax Collection</a></li>
+            <li><a href="product.html?mood=focus">Focus Collection</a></li>
+            <li><a href="product.html?mood=romance">Romance Collection</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Room Scent. All rights reserved.</span>
+        <span>Crafted for mindful living spaces.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
